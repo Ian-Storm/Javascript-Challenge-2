@@ -4,31 +4,39 @@
 	<title>Stemwijzer</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="jchallenge.css">
+	
 </head>
 <body>
 
-	<section id="mainSection" class="hidden">
+	<section id="start">
 		<div class="container">
 			<div class="row justify-content-center" id="mid">
 			 	<h2>Maak hier uw eigen stemwijzer</h2>
 			</div>
 			<div class="row justify-content-center">
-				<button class="btn btn-primary">Start</button>
+				<button class="btn btn-primary" onclick="go()">Start</button>
 			</div>
 	  	</div>
   	</section>
 
-  	<section id="mainSection" class="hidden">
-	  	<div class="card" style="width: 18rem;">
-	  		<div class="card-body">
-			    <h5 class="card-title">Vraag 1</h5>
-			    <p class="card-text">Is komkommer een fruit?</p>
-			    <a href="#" class="card-link">Ja</a>
-			    <a href="#" class="card-link">Geen idee</a>
-			    <a href="#" class="card-link">Nee</a>
-		  	</div>
+  	<section id="answerBox">
+  		<div class="row justify-content-center" id="mid">
+	  		<div class="card">
+		  		<div class="card-body">
+				  <h5 class="card-title" id="title"></h5>
+				    <p class="card-text" id="question"></p>
+				    <button id="Y" class="btn btn-success" onclick="addCounter()">Ja</button>
+				    <button id="?" class="btn btn-warning" onclick="addCounter()">Geen idee</button>
+				    <button id="N" class="btn btn-danger" onclick="addCounter()">Nee</button>
+				    <button id="S" class="btn btn-secondary" onclick="addCounter()">Overslaan</button>
+				    <input type="checkbox" value="dubble">
+			  	</div>
+			</div>
 		</div>
 	</section>
 
 </body>
+	<script src="jchallenge.js"></script>
+	<script src="partyOpinion.js"></script>
+	<script src="questions.js"></script>
 </html>

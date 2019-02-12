@@ -5,5 +5,13 @@ body {
 }
 
 #mid {
-	padding-top: 25%;
+	padding-top: 15%;
+}
+
+h2 {
+	color: red;
+}
+
+.card {
+	width: 40rem;
 }
