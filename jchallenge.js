@@ -3,12 +3,16 @@ var start = document.getElementById('start');
 var questionCounter = 0;
 var title = document.getElementById('title');
 var question = document.getElementById('question');
+var answers = [];
 
 answerBox.style.display = "none";
-start.style.display = "block";
+
+function onload(){
+		start.style.display = "block";
+	}
 
 function go(){
-	answerBox.style.display = "block";
+	answerBox.style.display = "inline";
 	start.style.display = "none";
 	questions();
 }
@@ -22,7 +26,25 @@ function questions(){
 	question.innerHTML = textArray[questionCounter];
 }
 
-function addCounter(){
-	questionCounter++;
-	questions();
+function addCounter(parametervanian) {
+
+	answers[questionCounter] = ;
+
+
+	if (questionCounter < 29) {
+		questionCounter++;
+		questions();
+	} else if (questionCounter == 29) {
+		restart();
+	}
+}
+
+function minusCounter(){
+	if (questionCounter >= 1 ) {
+		questionCounter--;
+		questions();
+	} else if (questionCounter == 0) {
+		answerBox.style.display = "none";
+		onload();
+	}
 }
