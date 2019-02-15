@@ -4,12 +4,10 @@ var questionCounter = 0;
 var title = document.getElementById('title');
 var question = document.getElementById('question');
 var answers = [];
+var list = document.getElementById('list');
 
 answerBox.style.display = "none";
-
-function onload(){
-		start.style.display = "block";
-	}
+start.style.display = "block";
 
 function go(){
 	answerBox.style.display = "inline";
@@ -26,25 +24,33 @@ function questions(){
 	question.innerHTML = textArray[questionCounter];
 }
 
-function addCounter(parametervanian) {
-
-	answers[questionCounter] = ;
-
-
-	if (questionCounter < 29) {
+function addCounter(answer) {
+		answers[questionCounter] = {
+			answer: answer,
+			question: titleArray[questionCounter]
+		};
+		//console.log(answers);
+	if (questionCounter < titleArray.length -1){
 		questionCounter++;
 		questions();
-	} else if (questionCounter == 29) {
-		restart();
+	} else if (questionCounter == titleArray.length -1){
+		console.log(parties);
+		answerBox.style.display = "none";
+		list.innerHTML = "";
+		for (var i = 0; i < parties.length; i++) {
+			var party = document.createElement('li');
+			party.innerText = parties[i].name;
+			list.appendChild(party);
+		}
 	}
 }
 
 function minusCounter(){
-	if (questionCounter >= 1 ) {
+	if (questionCounter >= 1 ){
 		questionCounter--;
 		questions();
-	} else if (questionCounter == 0) {
+	} else if (questionCounter == 0){
 		answerBox.style.display = "none";
-		onload();
+		start.style.display = "block";
 	}
 }

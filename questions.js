@@ -1,8 +1,8 @@
 
 var titleArray = [
-			"Bindend referendum", "Maatschappelijke dienstplicht", "Anoniem solliciteren", "Groepsbelediging", "Teelt en verkoop wiet", " Vervroegde vrijlating", "Vennootschapsbelasting", 
-            "Belasting hoogste inkomens", "Tijdelijke arbeidscontracten", "AOW-leeftijd 65","Verzekering zzp'ers", "Leenstelsel studenten", "Geld cultuur", "Islamitische immigranten","Kinderpardon","Onderdak illegalen","Hypotheekrente",
-            "Verhuurdersheffing","Schiphol","Kilometerheffing","Nieuwe wegen","Kolencentrales","Btw-tarief vlees","Voltooid leven","Afschaffing eigen risico","Landelijk zorgfonds","Defensie-uitgaven","Europees leger","Ontwikkelingshulp","EU-lidmaatschap"];
+			"1. Bindend referendum", "2. Maatschappelijke dienstplicht", "3. Anoniem solliciteren", "4. Groepsbelediging", "5. Teelt en verkoop wiet", "6. Vervroegde vrijlating", "7. Vennootschapsbelasting", 
+            "8. Belasting hoogste inkomens", "9. Tijdelijke arbeidscontracten", "10. AOW-leeftijd 65","11. Verzekering zzp'ers", "12. Leenstelsel studenten", "13. Geld cultuur", "14. Islamitische immigranten","15. Kinderpardon","16. Onderdak illegalen","17. Hypotheekrente",
+            "18. Verhuurdersheffing","19. Schiphol","20. Kilometerheffing","21. Nieuwe wegen","22. Kolencentrales","23. Btw-tarief vlees","24. Voltooid leven","25. Afschaffing eigen risico","26. Landelijk zorgfonds","27. Defensie-uitgaven","28. Europees leger","29. Ontwikkelingshulp","30. EU-lidmaatschap"];
 
 var textArray = [
     "Er moet een bindend referendum komen, waarmee burgers door het parlement aangenomen wetten kunnen tegenhouden.",

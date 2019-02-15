@@ -25,16 +25,22 @@
 		  		<div class="card-body">
 				  <h5 class="card-title" id="title"></h5>
 				    <p class="card-text" id="question"></p>
-				    <button id="Y" class="btn btn-success" onclick="addCounter()">Ja</button>
-				    <button id="?" class="btn btn-warning" onclick="addCounter()">Geen idee</button>
-				    <button id="N" class="btn btn-danger" onclick="addCounter()">Nee</button>
-				    <button id="S" class="btn btn-secondary" onclick="addCounter()">Overslaan</button>
-				    <button id="B" class="btn btn-dark" onclick="minusCounter()">Terug</button>
+				    <button id="Y" class="btn btn-success" onclick="addCounter(this.id)">Ja</button>
+				    <button id="?" class="btn btn-warning" onclick="addCounter(this.id)">Geen idee</button>
+				    <button id="N" class="btn btn-danger" onclick="addCounter(this.id)">Nee</button>
+				    <button id="S" class="btn btn-secondary" onclick="addCounter(this.id)">Overslaan</button>
+				    <button class="btn btn-dark" onclick="minusCounter()">Terug</button>
 				    <input type="checkbox" id="markiplier">x2
 			  	</div>
 			</div>
 		</div>
 	</section>
+
+	<section id="start">
+		<div class="row justify-content-center" id="mid">
+			<ul id="list"></ul>
+		</div>
+  	</section>
 
 </body>
 	<script src="jchallenge.js"></script>
