@@ -8,6 +8,7 @@ var list = document.getElementById('list');
 
 answerBox.style.display = "none";
 start.style.display = "block";
+listOfParties.style.display = "none";
 
 function go(){
 	answerBox.style.display = "inline";
@@ -29,17 +30,20 @@ function addCounter(answer) {
 			answer: answer,
 			question: titleArray[questionCounter]
 		};
-		//console.log(answers);
 	if (questionCounter < titleArray.length -1){
 		questionCounter++;
 		questions();
 	} else if (questionCounter == titleArray.length -1){
-		console.log(parties);
+		listOfParties.style.display = "inline";
 		answerBox.style.display = "none";
 		list.innerHTML = "";
 		for (var i = 0; i < parties.length; i++) {
 			var party = document.createElement('li');
 			party.innerText = parties[i].name;
+			
+			var answer = document.createElement('input');
+			answer.setAttribute('type', 'checkbox');
+			party.appendChild(answer);
 			list.appendChild(party);
 		}
 	}

@@ -15,3 +15,13 @@ h2 {
 .card {
 	width: 40rem;
 }
+
+li {
+	width: 200px;
+	float: left;
+	margin-right: 60px;
+}
+
+#choose {
+	text-align: center;
+}

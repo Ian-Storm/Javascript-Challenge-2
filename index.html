@@ -26,7 +26,7 @@
 				  <h5 class="card-title" id="title"></h5>
 				    <p class="card-text" id="question"></p>
 				    <button id="Y" class="btn btn-success" onclick="addCounter(this.id)">Ja</button>
-				    <button id="?" class="btn btn-warning" onclick="addCounter(this.id)">Geen idee</button>
+				    <button id="?" class="btn btn-warning" onclick="addCounter(this.id)">Geen van beide</button>
 				    <button id="N" class="btn btn-danger" onclick="addCounter(this.id)">Nee</button>
 				    <button id="S" class="btn btn-secondary" onclick="addCounter(this.id)">Overslaan</button>
 				    <button class="btn btn-dark" onclick="minusCounter()">Terug</button>
@@ -36,9 +36,14 @@
 		</div>
 	</section>
 
-	<section id="start">
+	<section>
 		<div class="row justify-content-center" id="mid">
-			<ul id="list"></ul>
+			<div class="card" id="listOfParties">
+				<h5 id="choose">Kies hier de partijen die belangrijk voor je zijn.</h5>
+		  			<div class="card-body">
+						<ul id="list"></ul>
+					</div>
+			</div>
 		</div>
   	</section>
 
