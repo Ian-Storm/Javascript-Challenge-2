@@ -24,4 +24,24 @@ li {
 
 #choose {
 	text-align: center;
+	float: left;
+	padding-bottom: 10px;
+	margin: 10px 0px 0px 20px
+}
+
+#space {
+	float: right;
+	margin-top: 5px;
+}
+
+#result {
+	float: right;
+}
+
+#back {
+	float: left;
+}
+
+#sorting {
+	text-align: center;
 }

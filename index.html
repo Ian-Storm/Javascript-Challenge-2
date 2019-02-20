@@ -39,13 +39,27 @@
 	<section>
 		<div class="row justify-content-center" id="mid">
 			<div class="card" id="listOfParties">
+				<button id="back" class="btn btn-dark" onclick="backFromParties()">Terug</button>
+				<button id="result" class="btn btn-primary" onclick="getResult()">Resultaat</button>
 				<h5 id="choose">Kies hier de partijen die belangrijk voor je zijn.</h5>
 		  			<div class="card-body">
 						<ul id="list"></ul>
 					</div>
+					<section id="sorting">
+						<button type="button" class="btn btn-secondary">Alle partijen</button>
+						<button type="button" class="btn btn-secondary">Alleen grote partijen</button>
+						<button type="button" class="btn btn-secondary">Alleen seculiere partijen</button>
+					</section>
 			</div>
 		</div>
   	</section>
+
+  	
+  		<div class="row justify-content-center" id="mid">
+			<div class="card" id="resultList">
+				<h4>De partijen die het beste u passen zijn:</h4>
+			</div>
+		</div>
 
 </body>
 	<script src="jchallenge.js"></script>

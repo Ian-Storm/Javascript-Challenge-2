@@ -9,6 +9,7 @@ var list = document.getElementById('list');
 answerBox.style.display = "none";
 start.style.display = "block";
 listOfParties.style.display = "none";
+resultList.style.display = "none";
 
 function go(){
 	answerBox.style.display = "inline";
@@ -43,13 +44,14 @@ function addCounter(answer) {
 			
 			var answer = document.createElement('input');
 			answer.setAttribute('type', 'checkbox');
+			answer.setAttribute("id", "space");
 			party.appendChild(answer);
 			list.appendChild(party);
 		}
 	}
 }
 
-function minusCounter(){
+function minusCounter() {
 	if (questionCounter >= 1 ){
 		questionCounter--;
 		questions();
@@ -57,4 +59,14 @@ function minusCounter(){
 		answerBox.style.display = "none";
 		start.style.display = "block";
 	}
+}
+
+function backFromParties() {
+	listOfParties.style.display = "none";
+	answerBox.style.display = "inline";
+}
+
+function getResult() {
+	listOfParties.style.display = "none";
+
 }

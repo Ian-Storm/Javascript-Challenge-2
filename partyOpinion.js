@@ -1,6 +1,6 @@
 var parties = [
 	{name: "VVD", secular: true, size: 33, long: "Volkspartij voor Vrijheid en Democratie"},
-	{name: "CDA", secular: false, size: 19, long: "Christen Democratisch Appel"},
+	{name: "CDA", secular: false, size: 19, long: "Christen Democratisch Appèl"},
 	{name: "PVV", secular: true, size: 20, long: "Partij voor de Vrijheid"},
 	{name: "D66", secular: true, size: 19, long: "Democratie 66"},
 	{name: "GroenLinks", secular: true, size: 14},
@@ -19,6 +19,7 @@ var parties = [
 	{name: "De Burger Beweging", secular: true, size: 0},
 	{name: "Piratenpartij", secular: true, size: 0},
 	{name: "Artikel 1", secular: true, size: 0},
+	{name: "Vrijzinnige Partij", secular: true, size: 0},
 	{name: "Libertarische Partij", secular: true, size: 0}
 ];
 
@@ -43,6 +44,7 @@ var scoreboard = [
 	{score: 0, name: "De Burger Beweging"},
 	{score: 0, name: "Piratenpartij"},
 	{score: 0, name: "Artikel 1"},
+	{score: 0, name: "Vrijzinnige Partij"},
 	{score: 0, name: "Libertarische Partij"}
 ];
 
