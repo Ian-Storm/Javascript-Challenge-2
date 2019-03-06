@@ -2,10 +2,15 @@ body {
 	background-image: url(https://d2vry01uvf8h31.cloudfront.net/_processed_/b/9/csm_eerstekeerstemmen_6cc2d7d8b7.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow: hidden;
 }
 
 #mid {
 	padding-top: 15%;
+}
+
+#mid2 {
+	padding-top: 100px;
 }
 
 h2 {
@@ -44,4 +49,8 @@ li {
 
 #sorting {
 	text-align: center;
+}
+
+#resultList {
+	float: left;
 }

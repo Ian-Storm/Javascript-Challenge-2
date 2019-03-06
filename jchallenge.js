@@ -38,7 +38,7 @@ function addCounter(answer) {
 		listOfParties.style.display = "inline";
 		answerBox.style.display = "none";
 		list.innerHTML = "";
-		for (var i = 0; i < parties.length; i++) {
+		for (let i = 0; i < parties.length; i++) {
 			var party = document.createElement('li');
 			party.innerText = parties[i].name;
 			
@@ -68,5 +68,11 @@ function backFromParties() {
 
 function getResult() {
 	listOfParties.style.display = "none";
+	resultList.style.display = "inline";
+}
 
+function allParties() {
+	for (let i = 0; i < parties.length; i++) {
+		
+	}
 }
