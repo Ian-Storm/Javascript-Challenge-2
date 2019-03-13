@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Stemwijzer</title>
+	<link rel="icon" href="https://www.tilburgers.nl/wp-content/uploads/2010/06/stemmen.jpg">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="jchallenge.css">
 	
@@ -46,9 +47,9 @@
 						<ul id="list"></ul>
 					</div>
 					<section id="sorting">
-						<button type="button" class="btn btn-secondary">Alle partijen</button>
-						<button type="button" class="btn btn-secondary">Alleen grote partijen</button>
-						<button type="button" class="btn btn-secondary">Alleen seculiere partijen</button>
+						<button type="button" class="btn btn-secondary" onclick="allParties()">Alle partijen</button>
+						<button type="button" class="btn btn-secondary" onclick="bigParties()">Alleen grote partijen</button>
+						<button type="button" class="btn btn-secondary" onclick="secParties()">Alleen seculiere partijen</button>
 					</section>
 			</div>
 		</div>

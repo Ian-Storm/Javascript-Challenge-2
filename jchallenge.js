@@ -72,7 +72,51 @@ function getResult() {
 }
 
 function allParties() {
-	for (let i = 0; i < parties.length; i++) {
-		
-	}
+	list.innerHTML = "";
+		for (let i = 0; i < parties.length; i++) {
+			var party = document.createElement('li');
+			party.innerText = parties[i].name;
+			
+			var answer = document.createElement('input');
+			answer.setAttribute('type', 'checkbox');
+			answer.setAttribute("id", "space");
+			party.appendChild(answer);
+			list.appendChild(party);
+		}
+}
+
+function bigParties() {
+	list.innerHTML = "";
+	var bigParties = [];
+		for (let i = 0; i < parties.length; i++) {
+			if (parties[i].size >= 1) {
+				bigParties.push(parties[i].name);
+			}
+		} 
+		for (let i = 0; i < bigParties.length; i++) {
+			var partiesList = document.createElement("li");
+			partiesList.innerText = bigParties[i];var answer = document.createElement('input');
+			answer.setAttribute('type', 'checkbox');
+			answer.setAttribute("id", "space");
+			partiesList.appendChild(answer);
+			list.appendChild(partiesList);
+		}
+}
+
+function secParties() {
+	list.innerHTML = "";
+	var secParties = [];
+		for (let i = 0; i < parties.length; i++) {
+			if (parties[i].secular == true) {
+				secParties.push(parties[i].name);
+			}
+		} 
+		for (let i = 0; i < secParties.length; i++) {
+			var partiesList = document.createElement("li");
+			partiesList.innerText = secParties[i];var answer = document.createElement('input');
+			answer.setAttribute('type', 'checkbox');
+			answer.setAttribute("id", "space");
+			partiesList.appendChild(answer);
+			list.appendChild(partiesList);
+		}
 }
